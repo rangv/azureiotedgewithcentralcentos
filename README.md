@@ -6,7 +6,6 @@ This tutorial demonstrates a scenario of IoT Edge runtime running on CentOS and 
 
 In this tutorial, you learn how to:
 
-> [!div class="checklist"]
 > * Create a device template for an IoT Edge device
 > * Create an IoT Edge device in IoT Central
 > * Deploy a simulated IoT Edge device to a CentOS VM
