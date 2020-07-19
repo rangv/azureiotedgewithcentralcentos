@@ -39,7 +39,7 @@ To create a device template from an IoT Edge manifest:
 
 1. Select the **Manage** interface in the **SimulatedTemperatureSensor** module to view the two properties defined in the manifest:
 
-:::image type="content" source="images/imported-manifest.png" alt-text="Device template created from IoT Edge manifest":::
+![Device template created from IoT Edge manifest](images/imported-manifest.png)
 
 ### Add telemetry to manifest
 
@@ -79,7 +79,7 @@ To add the telemetry definitions to the device template:
 
 The **Manage** interface now includes the **machine**, **ambient**, and **timeCreated** telemetry types:
 
-:::image type="content" source="images/manage-interface.png" alt-text="Interface with machine and ambient telemetry types":::
+![Interface with machine and ambient telemetry types](images/manage-interface.png)
 
 ### Add views to template
 
@@ -95,7 +95,8 @@ The device template doesn't yet have a view that lets an operator see the teleme
 
 1. Select **Save** to save the **View IoT Edge device telemetry** view.
 
-:::image type="content" source="images/template-telemetry-view.png" alt-text="Device template with telemetry view":::
+![Device template with telemetry view](images/template-telemetry-view.png)
+
 
 ### Publish the template
 
@@ -103,7 +104,7 @@ Before you can add a device that uses the **Environmental Sensor Edge Device** t
 
 Navigate to the **Environmental Sensor Edge Device** template and select **Publish**. On the **Publish this device template to the application** panel, select **Publish** to publish the template:
 
-:::image type="content" source="images/publish-template.png" alt-text="Publish the device template":::
+![Publish the device template](images/publish-template.png)
 
 ## Add IoT Edge device
 
@@ -115,7 +116,7 @@ Now you've published the **Environmental Sensor Edge Device** template, you can 
 
 You now have a new device with the status **Registered**:
 
-:::image type="content" source="images/new-device.png" alt-text="New, registered device":::
+![New Device](images/new-device.png)
 
 ### Get the device credentials
 
@@ -142,18 +143,19 @@ Below are the steps to install a CentOS VM and install IoT Edge runtime.
 1. Click on **Create a resource**, click on **Compute**. Click on **Virtual Machine**   
 
 1. Enter valid information and click **Review + create**  
-    
-    :::image type="content" source="images/createcentos.png" alt-text="Publish the device template":::
+
+![Create CentOS VM](images/createcentos.png)
 
 1. Go To newly created CentOS VM and click on **serial console**  and enter your login and password.
-    
-    :::image type="content" source="images/serialconsole.png" alt-text="Publish the device template":::
+
+![Serial Console](images/serialconsole.png)
 
 2. Check the OS and Version on the VM, type
     ```bash
     $ uname -a
     ```    
-    :::image type="content" source="images/uname.png" alt-text="Publish the device template":::
+
+![OS Version](images/uname.png)
 
 3. Install Moby engine. As of the date this tutorial was created following is the latest package. To get the latest package go to [Moby Engine Packages](https://packages.microsoft.com/centos/7/prod/)
 
@@ -180,17 +182,18 @@ Below are the steps to install a CentOS VM and install IoT Edge runtime.
 
     $ sudo rpm -Uhv https://github.com/Azure/azure-iotedge/releases/download/1.0.9.3/iotedge-1.0.9.3-1.el7.x86_64.rpm
     ``` 
-    :::image type="content" source="images/edgeinstall.png" alt-text="Publish the device template":::
+
+    ![Install Edge Runtime](images/edgeinstall.png)
 
 6. Edit /etc/iotedge/config.yaml to update Device provisioning service properties to provision the device
 
     Comment out manual configuration portion on the config.yaml
-    
-    :::image type="content" source="images/manualconfig.png" alt-text="Publish the device template":::
+
+    ![Comment out manual Config](images/manualconfig.png)
 
     Uncomment out device provisioning service with symmetric key and update **scope id**, **registration id** with your device id from IoT Central and **symmetric key** which you got from the **Get the device credentials** section of this tutorial
     
-    :::image type="content" source="images/dpsscope.png" alt-text="Publish the device template":::
+    ![Update config.yaml](images/dpsscope.png)
  
 6. Restart Edge and list edge modules
     ```bash
@@ -200,6 +203,5 @@ Below are the steps to install a CentOS VM and install IoT Edge runtime.
     ```    
 
 6. Go To Device Details page on IoT Central and you will see telemetry flowing from your device
-
-    :::image type="content" source="images/telemetry.png" alt-text="Publish the device template":::
-
+    
+    ![Visualization](images/telemetry.png)
