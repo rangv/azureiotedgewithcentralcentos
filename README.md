@@ -2,7 +2,10 @@
 
    ![header](images/centos_edge_central.png)
 
-This tutorial demonstrates a scenario of IoT Edge runtime running on CentOS and provisioned and managed from IoT Central. It requires a device or VM running CentOS and an IoT Central App to provision and manage it. This tutorial will use an CentOS deployed on Azure.
+This tutorial demonstrates a scenario of IoT Edge runtime running on CentOS 7.X and provisioned and managed from IoT Central. It requires a device or VM running CentOS 7.X and an IoT Central App to provision and manage it. This tutorial will use an CentOS 7.5 deployed on Azure.
+
+[IoT Edge Support](https://docs.microsoft.com/en-us/azure/iot-edge/support) lists Azure IoT Edge supported systems. 
+
 
 In this tutorial, you learn how to:
 
@@ -135,15 +138,15 @@ You've now finished configuring your IoT Central application to enable an IoT Ed
 
 In this tutorial, you use a CentOS VM, created on Azure to simulate an IoT Edge device. 
 
-Below are the steps to install a CentOS VM and install IoT Edge runtime.
+Below are the steps to install a CentOS VM and install IoT Edge runtime. 
 
 1. Go To [Azure Portal](https://portal.azure.com)
 
-1. Click on **Create a resource**, click on **Compute**. Click on **Virtual Machine**   
+1. You can search for CentOS 7.5 VM from marketplace and click **Create** button to install CentOS 7.5 VM  
 
 1. Enter valid information and click **Review + create**  
 
-![Create CentOS VM](images/createcentos.png)
+    ![Create CentOS VM](images/createcentos.png)
 
 1. Go To newly created CentOS VM and click on **serial console**  and enter your login and password.
 
