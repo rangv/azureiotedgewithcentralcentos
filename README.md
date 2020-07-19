@@ -173,10 +173,6 @@ Below are the steps to install a CentOS VM and install IoT Edge runtime.
 4. Install dependencies
     ```bash
    $ sudo yum install http://ftp.altlinux.org/pub/distributions/ALTLinux/Sisyphus/x86_64/RPMS.classic/libcrypto10-1.0.2r-alt3.x86_64.rpm
-
-   $ sudo yum install http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages/compat-openssl10-1.0.2o-3.el8.x86_64.rpm
-
-   $ sudo yum install http://mirror.centos.org/centos/8/BaseOS/x86_64/os/Packages/libzstd-devel-1.4.2-2.el8.x86_64.rpm
     ```    
 5. Install IoT Edge Runtime
     ```bash
